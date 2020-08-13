@@ -1,0 +1,7 @@
+<!doctype html><html><head><meta charset="UTF-8"><title id="main_title">Travel Planner</title></head><body><div id="app"><div class="holder headline" id="head_title">Travel Planner App</div><div class="holder zip"><label for="zip">Enter city name here</label><div class="cus_input"><input id="city_name" placeholder="Enter city name"></div></div><div class="holder tripbox"><div class="cus_input">Enter trip date here <input id="tripdate" placeholder="ex. 07/30/2020"></div><div><p id="countdown">Countdown:</p></div></div><div class="holder feel"><label for="feelings">Have a view of the city :)</label><div class="cus_input"><img id="inputimage"></div></div><div class="cus_button"><button id="generate" type="submit">Generate</button> <button id="remove" type="reset">Remove</button></div><div class="holder entry" id="infosec"><div class="title" id="entryHolder">City information<div id="latitude"></div><div id="longtitude"></div><div id="CountryName"></div></div><div class="title" id="entryHolder_2">Weather information<div id="precip"></div><div id="pres"></div><div id="temp"></div></div></div><div class="footer"></div></div><script>// Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+      });
+  }</script><script src="main.js"></script></body></html>

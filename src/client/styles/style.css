@@ -1,0 +1,118 @@
+body{
+    /* background: #fffff8; */
+    background: lightyellow;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+    background: #fffff8;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 50px 50px 205px 30px 100px 40px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd sd sd sd sd sd sd"
+    "cd cd cd cd cd cd cd cd"
+    "de de de de de de de de"
+    "bt bt bt bt bt bt bt bt"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft"
+}
+
+.headline{
+    padding-left: 5px;
+    grid-area: hd;
+    /*border: 1px solid red;*/
+    font-size: 25px;
+}
+.zip{
+    padding-left: 5px;
+    grid-area: sd;
+    /*border: 1px solid red;*/
+    background: lightcoral;
+}
+.tripbox{
+    padding-left: 5px;
+    grid-area: cd;
+    /*border: 1px solid red;*/
+    background: lightcoral;
+    display: flex;
+    flex-direction: row;
+}
+.feel{
+    padding-left: 5px;
+    grid-area: de;
+    /*border: 1px solid red;*/
+    background: lightcoral;
+}
+.cus_button{
+    padding-left: 5px;
+    grid-area: bt;
+    background: lightcoral;
+}
+.entry{
+    padding: 5px;
+    grid-area: main;
+    /*border: 1px solid red;*/
+    background: lightcoral;
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    grid-area: ft;
+    /*border: 1px solid red;*/
+}
+textarea{
+    background: lightgrey;
+    color: black;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    border: 3px solid white;
+}
+input{
+    display: block;
+    background:lightgrey;
+    color: black;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border: 3px solid white;
+}
+label{
+    display:block;
+    font-size: 16px;
+}
+button{
+    background: white;
+    color: black;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    border: 3px solid black;
+    /* box-shadow: 2px 4px 5px #444; */
+}
+#remove{
+    margin-left: 10px;
+}
+.cus_input{
+    font-size: 16px;
+}
+#countdown{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+#entryHolder_2{
+    margin-left: 50px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
